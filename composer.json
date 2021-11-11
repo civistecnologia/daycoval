@@ -1,0 +1,23 @@
+{
+    "name": "civis/daycoval",
+    "description": "Repositório responsável por gerar remessas e boletos do banco daycoval",
+    "authors": [
+        {
+            "name": "Túlio Carvalho",
+            "email": "tulioyqr@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Civis\\Daycoval\\": "src/"
+        }
+    },
+    "require": {
+        "mpdf/mpdf": "^8.0",
+        "picqer/php-barcode-generator": "^2.2"
+    },
+    "require-dev": {
+        "mpdf/mpdf": "^8.0",
+        "picqer/php-barcode-generator": "^2.2"
+    }
+}
