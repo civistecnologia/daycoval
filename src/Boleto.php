@@ -1,7 +1,5 @@
 <?php
-
 namespace Civis\Daycoval;
-
 class Boleto
 {
 
