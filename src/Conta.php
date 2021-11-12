@@ -19,7 +19,7 @@ class Conta
         $cc,
         $cc_dv,
         $carteira,
-        $operacao,
+        $operacao
     ) {
         $this->agencia = $agencia;
         $this->agencia_dv = $agencia_dv;

@@ -11,7 +11,7 @@ class Beneficiario
 
     public function __construct(
         string $nome,
-        string $inscricao,
+        string $inscricao
     ) {
         $this->nome         = $nome;
         $this->inscricao    = $inscricao;

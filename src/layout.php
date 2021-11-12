@@ -68,7 +68,9 @@
             <td style="width: 230px;">
                 <table>
                     <tr>
-                        <td style="padding-right: 30px"><img src="./img/logo-daycoval.jpg" alt="" style="width: 190px;margin-bottom:5px;"></td>
+                        <td style="padding-right: 30px">
+                            <img src="data:image/jpg;base64,<?php echo base64_encode(file_get_contents(dirname(__DIR__, 1) . "/img/logo-daycoval.jpg")); ?>" style="width: 190px;margin-bottom:5px;" />
+                        </td>
                     </tr>
                 </table>
             </td>
@@ -192,7 +194,9 @@
 
                                         </span>
                                     </td>
-                                    <td style="border: none;padding:0;width:7px;"><img src="./img/x-line-3.jpg" alt="" style="width: 4px;"></td>
+                                    <td style="border: none;padding:0;width:7px;">
+                                        <img src="data:image/jpg;base64,<?php echo base64_encode(file_get_contents(dirname(__DIR__, 1) . "/img/x-line.jpg")); ?>" alt="" style="width: 4px;" />
+                                    </td>
                                     <td style="width:100px;" >
                                         <span class="content-label">
                                             Valor
@@ -475,7 +479,9 @@
             <td style="width: 230px;">
                 <table>
                     <tr>
-                        <td style="padding-right: 30px"><img src="./img/logo-daycoval.jpg" alt="" style="width: 190px;margin-bottom:5px;"></td>
+                        <td style="padding-right: 30px">
+                            <img src="data:image/jpg;base64,<?php echo base64_encode(file_get_contents(dirname(__DIR__, 1) . "/img/logo-daycoval.jpg")); ?>" style="width: 190px;margin-bottom:5px;" />
+                        </td>
                     </tr>
                 </table>
             </td>
@@ -590,7 +596,9 @@
 
                                         </span>
                                     </td>
-                                    <td style="border: none;padding:0;width:7px;"><img src="./img/x-line-3.jpg" alt="" style="width: 4px;"></td>
+                                    <td style="border: none;padding:0;width:7px;">
+                                        <img src="data:image/jpg;base64,<?php echo base64_encode(file_get_contents(dirname(__DIR__, 1) . "/img/x-line.jpg")); ?>" alt="" style="width: 4px;" />
+                                    </td>
                                     <td style="width:100px;" >
                                         <span class="content-label">
                                             Valor
@@ -854,7 +862,9 @@
             <td style="width: 230px;">
                 <table>
                     <tr>
-                        <td style="padding-right: 30px"><img src="./img/logo-daycoval.jpg" alt="" style="width: 190px;margin-bottom:5px;"></td>
+                        <td style="padding-right: 30px">
+                            <img src="data:image/jpg;base64,<?php echo base64_encode(file_get_contents(dirname(__DIR__, 1) . "/img/logo-daycoval.jpg")); ?>" style="width: 190px;margin-bottom:5px;" />
+                        </td>
                     </tr>
                 </table>
             </td>
@@ -978,7 +988,9 @@
 
                                         </span>
                                     </td>
-                                    <td style="border: none;padding:0;width:7px;"><img src="./img/x-line-3.jpg" alt="" style="width: 4px;"></td>
+                                    <td style="border: none;padding:0;width:7px;">
+                                        <img src="data:image/jpg;base64,<?php echo base64_encode(file_get_contents(dirname(__DIR__, 1) . "/img/x-line.jpg")); ?>" alt="" style="width: 4px;" />
+                                    </td>
                                     <td style="width:100px;" >
                                         <span class="content-label">
                                             Valor

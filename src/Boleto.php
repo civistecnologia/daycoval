@@ -42,7 +42,7 @@ class Boleto
         $valorDesconto = 0,
         $dataDesconto = null,
         $especie = self::ESPECIE_DUPLICATA,
-        \Civis\Daycoval\Beneficiario $avalista = null,
+        \Civis\Daycoval\Beneficiario $avalista = null
     ) {
         $this->codDocumento = $codDocumento;
         $this->nossoNumero = $nossoNumero;
