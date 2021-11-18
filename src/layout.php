@@ -215,7 +215,9 @@
                                 Informações de responsabilidade do beneficiário
                             </span><br />
                             <span class="content-text">
-                                MULTA DE 2,00 % A PARTIR DE <?php echo date("d/m/Y", strtotime($boleto->getDataVencimento() . " + 1 day")); ?>
+                                <?php foreach ($boleto->getInstrucoes() as $instrucao) {
+                                    echo "<p>$instrucao</p>";
+                                } ?>
                             </span>
                         </td>
                     </tr>
@@ -617,7 +619,9 @@
                                 Informações de responsabilidade do beneficiário
                             </span><br />
                             <span class="content-text">
-                                MULTA DE 2,00 % A PARTIR DE <?php echo date("d/m/Y", strtotime($boleto->getDataVencimento() . " + 1 day")); ?>
+                                <?php foreach ($boleto->getInstrucoes() as $instrucao) {
+                                    echo "<p>$instrucao</p>";
+                                } ?>
                             </span>
                         </td>
                     </tr>
@@ -1009,7 +1013,9 @@
                                 Informações de responsabilidade do beneficiário
                             </span><br />
                             <span class="content-text">
-                                MULTA DE 2,00 % A PARTIR DE <?php echo date("d/m/Y", strtotime($boleto->getDataVencimento() . " + 1 day")); ?>
+                                <?php foreach ($boleto->getInstrucoes() as $instrucao) {
+                                    echo "<p>$instrucao</p>";
+                                } ?>
                             </span>
                         </td>
                     </tr>

@@ -28,6 +28,7 @@ class Boleto
     private $conta;
     private $codigoBarras;
     private $linhaDigitavel;
+    private $instrucoes = array();
 
 
     public function __construct(
@@ -59,6 +60,16 @@ class Boleto
         $this->nossoNumeroDv = $this->calculaNossoNumeroDv();
         $this->codigoBarras = $this->calculaCodigoBarras();
         $this->linhaDigitavel = $this->calculaLinhaDigitavel();
+    }
+
+    public function getInstrucoes(): array
+    {
+        return $this->instrucoes;
+    }
+
+    public function addInstrucao(string $instrucao): void
+    {
+        $this->instrucoes[] = $instrucao;
     }
 
     public function getCodDocumento(): string

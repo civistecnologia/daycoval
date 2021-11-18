@@ -33,7 +33,7 @@ class Pdf
         $this->mpdf->Output();
     }
 
-    private function layout(): string
+    public function layout(): string
     {
         ob_start();
         include "layout.php";
