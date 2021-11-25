@@ -7,6 +7,8 @@ use Civis\Daycoval\Util;
 class Remessa
 {
 
+    const PULO_LINHA = "\r" . PHP_EOL;
+
     const CODIGO_REMESSA = 1;
     const CODIGO_PEDIDO_BAIXA = 2;
     const CODIGO_ABATIMENTO = 4;
@@ -20,7 +22,6 @@ class Remessa
     private $trailler = "";
 
     private $codEmpresa;
-    private $codInscricao;
     private $nomeEmpresa;
     private $sequencial = 1;
 
@@ -45,7 +46,7 @@ class Remessa
         $this->header .= Util::date(date("Y-m-d"), [95, 100]);
         $this->header .= Util::alphanumeric(" ", [101, 394]);
         $this->header .= Util::numeric($this->sequencial++, [395, 400]);
-        $this->header .= PHP_EOL;
+        $this->header .= self::PULO_LINHA;
     }
 
     public function addBoleto(\Civis\Daycoval\Boleto $boleto, $nfeNumero, $nfeValor, $nfeDataEmissao, $nfeChave, $codOcorrencia = self::CODIGO_REMESSA): void
@@ -100,7 +101,7 @@ class Remessa
         $this->content .= Util::numeric(0, [392, 393]);
         $this->content .= Util::numeric(0, [394, 394]);
         $this->content .= Util::numeric($this->sequencial++, [395, 400]);
-        $this->content .= PHP_EOL;
+        $this->content .= self::PULO_LINHA;
 
         $this->content .= Util::numeric(4, [1, 1]);
         $this->content .= Util::alphanumeric($nfeNumero, [2, 16]);
@@ -109,7 +110,7 @@ class Remessa
         $this->content .= Util::alphanumeric($nfeChave, [38, 81]);
         $this->content .= Util::alphanumeric(" ", [82, 394]);
         $this->content .= Util::numeric($this->sequencial++, [395, 400]);
-        $this->content .= PHP_EOL;
+        $this->content .= self::PULO_LINHA;
     }
 
     private function trailler(): void
