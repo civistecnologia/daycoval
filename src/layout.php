@@ -127,7 +127,7 @@
                                             N° Documento
                                         </span><br />
                                         <span class="content-text">
-                                            <?php echo $boleto->getCodDocumento(); ?>
+                                            <?php echo $boleto->getSeuNumero(); ?>
                                         </span>
                                     </td>
                                     <td>
@@ -531,7 +531,7 @@
                                             N° Documento
                                         </span><br />
                                         <span class="content-text">
-                                            <?php echo $boleto->getCodDocumento(); ?>
+                                            <?php echo $boleto->getSeuNumero(); ?>
                                         </span>
                                     </td>
                                     <td>
@@ -925,7 +925,7 @@
                                             N° Documento
                                         </span><br />
                                         <span class="content-text">
-                                            <?php echo $boleto->getCodDocumento(); ?>
+                                            <?php echo $boleto->getSeuNumero(); ?>
                                         </span>
                                     </td>
                                     <td>

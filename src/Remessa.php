@@ -70,7 +70,7 @@ class Remessa
         $this->content .= Util::alphanumeric(" ", [84, 107]);
         $this->content .= Util::numeric(6, [108, 108]);
         $this->content .= Util::numeric($codOcorrencia, [109, 110]);
-        $this->content .= Util::numeric($boleto->getCodDocumento(), [111, 120]);
+        $this->content .= Util::numeric($boleto->getSeuNumero(), [111, 120]);
         $this->content .= Util::date($boleto->getDataVencimento(), [121, 126]);
         $this->content .= Util::money($boleto->getValor(), [127, 139]);
         $this->content .= Util::numeric(707, [140, 142]);

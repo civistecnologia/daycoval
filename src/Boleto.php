@@ -15,6 +15,7 @@ class Boleto
 
     private $codDocumento;
     private $nossoNumero;
+    private $seuNumero;
     private $nossoNumeroDv;
     private $dataVencimento;
     private $dataEmissao;
@@ -34,6 +35,7 @@ class Boleto
     public function __construct(
         $codDocumento,
         $nossoNumero,
+        $seuNumero,
         $dataVencimento,
         $dataEmissao,
         $valor,
@@ -47,6 +49,7 @@ class Boleto
     ) {
         $this->codDocumento = $codDocumento;
         $this->nossoNumero = $nossoNumero;
+        $this->seuNumero = $seuNumero;
         $this->dataVencimento = $dataVencimento;
         $this->dataEmissao = $dataEmissao;
         $this->valor = $valor;
@@ -80,6 +83,11 @@ class Boleto
     public function getNossoNumero(): string
     {
         return $this->nossoNumero;
+    }
+
+    public function getSeuNumero(): string
+    {
+        return $this->seuNumero;
     }
 
     public function getNossoNumeroDv(): int
