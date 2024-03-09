@@ -13,12 +13,12 @@ $objBeneficiario = new \Civis\Daycoval\Beneficiario(
 );
 
 $objConta = new \Civis\Daycoval\Conta(
-    "agencia",
-    "agencia-dv",
-    "conta",
-    "conta-dv",
-    "carteira",
-    "operacao"
+    "AGENCIA",
+    "AGENCIA-DV",
+    "CONTA",
+    "CONTA-DV",
+    "CARTEIRA",
+    "OPERACAO"
 );
 
 $objRemessa = new \Civis\Daycoval\Remessa(
@@ -36,16 +36,16 @@ $objPagador = new \Civis\Daycoval\Pagador(
     "UF"
 );
 
-$objBoleto = new \Civis\Daycoval\Boleto(
-    "COD DOCUMENTO",
-    "NOSSO NUMERO",
-    "SEU NUMERO",
-    "VENCIMENTO",
-    "EMISSAO",
-    "VALOR",
-    $objPagador,
-    $objBeneficiario,
-    $objConta
+$objBoleto = new \Civis\Daycoval\Boleto(  
+    &emsp;&emsp;"COD DOCUMENTO",  
+    &emsp;&emsp;"NOSSO NUMERO",  
+    &emsp;&emsp;"SEU NUMERO",  
+    &emsp;&emsp;"VENCIMENTO",  
+    &emsp;&emsp;"EMISSAO",  
+    &emsp;&emsp;"VALOR",  
+    &emsp;&emsp;$objPagador,  
+    &emsp;&emsp;$objBeneficiario,  
+    &emsp;&emsp;$objConta  
 );
 
 $objRemessa->addBoleto($objBoleto, "NUMERO NOTA FISCAL", "VALOR NOTA FISCAL", "DATA EMISSAO", "CHAVE NFE");
@@ -60,12 +60,12 @@ $objBeneficiario = new \Civis\Daycoval\Beneficiario(
 );
 
 $objConta = new \Civis\Daycoval\Conta(
-    "agencia",
-    "agencia-dv",
-    "conta",
-    "conta-dv",
-    "carteira",
-    "operacao"
+    "AGENCIA",
+    "AGENCIA-DV",
+    "CONTA",
+    "CONTA-DV",
+    "CARTEIRA",
+    "OPERACAO"
 );
 
 $objPdf = new \Civis\Daycoval\Pdf();
@@ -80,16 +80,16 @@ $objPagador = new \Civis\Daycoval\Pagador(
     "UF"
 );
 
-$objBoleto = new \Civis\Daycoval\Boleto(
-    "COD DOCUMENTO",
-    "NOSSO NUMERO",
-    "SEU NUMERO",
-    "VENCIMENTO",
-    "EMISSAO",
-    "VALOR",
-    $objPagador,
-    $objBeneficiario,
-    $objConta
+$objBoleto = new \Civis\Daycoval\Boleto(  
+    &emsp;&emsp;"COD DOCUMENTO",  
+    &emsp;&emsp;"NOSSO NUMERO",  
+    &emsp;&emsp;"SEU NUMERO",  
+    &emsp;&emsp;"VENCIMENTO",  
+    &emsp;&emsp;"EMISSAO",  
+    &emsp;&emsp;"VALOR",  
+    &emsp;&emsp;$objPagador,  
+    &emsp;&emsp;$objBeneficiario,  
+    &emsp;&emsp;$objConta  
 );
 
 $objPdf->addBoleto($objBoleto, "NUMERO NOTA FISCAL", "VALOR NOTA FISCAL", "DATA EMISSAO", "CHAVE NFE");
