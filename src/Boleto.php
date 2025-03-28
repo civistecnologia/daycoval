@@ -269,7 +269,14 @@ class Boleto
     {
         if ($data != "") {
             list($ano, $mes, $dia) = explode("-", $data);
-            return (abs(($this->_dateToDays("1997", "10", "07")) - ($this->_dateToDays($ano, $mes, $dia))));
+            
+            $fator = (abs(($this->_dateToDays("1997", "10", "07")) - ($this->_dateToDays($ano, $mes, $dia))));
+            $limit = $fator % 9000;
+            if ($limit >= 1000) {
+                return $limit;
+            }
+            
+            return $limit + 9000;
         } else {
             return "0000";
         }
